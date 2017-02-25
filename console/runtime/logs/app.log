@@ -1,0 +1,153 @@
+2016-03-30 04:06:32 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'could not find driver' in D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('oci:dbname=//10...', 'QTAN_TEST', 'qNatf#2014', NULL)
+#1 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\db\Command.php(218): yii\db\Connection->getMasterPdo()
+#4 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\db\Command.php(775): yii\db\Command->prepare(false)
+#5 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\controllers\MigrateController.php(147): yii\db\Command->execute()
+#6 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\controllers\MigrateController.php(122): yii\console\controllers\MigrateController->createMigrationHistoryTable()
+#7 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#8 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#9 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#10 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#13 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#14 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate', Array)
+#15 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#16 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#17 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\yii(27): yii\base\Application->run()
+#18 {main}
+
+Next exception 'yii\db\Exception' with message 'could not find driver' in D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\db\Command.php(218): yii\db\Connection->getMasterPdo()
+#2 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\db\Command.php(775): yii\db\Command->prepare(false)
+#3 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\controllers\MigrateController.php(147): yii\db\Command->execute()
+#4 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\controllers\MigrateController.php(122): yii\console\controllers\MigrateController->createMigrationHistoryTable()
+#5 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#6 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#7 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#8 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('', Array)
+#11 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('', Array)
+#12 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate', Array)
+#13 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#14 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 D:\PROJECTS\QT05_15003_QTAN_CP\06.SOURCE\Draft\QTAN_CMS_NEW\yii(27): yii\base\Application->run()
+#16 {main}
+Additional Information:
+
+2016-03-30 04:06:32 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'D:\\Users\\toanhv9.VIETTELGROUP\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'VTT-TOANHV9-V'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'D:'
+    'HOMEPATH' => '\\Users\\toanhv9.VIETTELGROUP'
+    'IBM_RATIONAL_RFT_ECLIPSE_DIR' => 'C:\\Program Files (x86)\\IBM\\SDP'
+    'IBM_RATIONAL_RFT_INSTALL_DIR' => 'C:\\Program Files (x86)\\IBM\\SDP\\FunctionalTester\\bin'
+    'LOCALAPPDATA' => 'D:\\Users\\toanhv9.VIETTELGROUP\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DC-KV3-01'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => 'D:\\xampp\\mysql\\bin'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'ORACLE_HOME' => 'C:\\ORACLE\\product\\11.2.0\\client_1\\'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\xampp\\;D:\\xampp\\php;D:\\xampp\\perl\\site\\bin;D:\\xampp\\perl\\bin;D:\\xampp\\apache\\bin;D:\\xampp\\mysql\\bin;D:\\xampp\\FileZillaFTP;D:\\xampp\\MercuryMail;D:\\xampp\\sendmail;D:\\xampp\\webalizer;D:\\xampp\\tomcat\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\ThinPrint\\;C:\\ORACLE\\product\\11.2.0\\client_1;C:\\ORACLE\\product\\11.2.0\\client_1\\bin;C:\\app\\Administrator\\product\\11.2.0\\client_1;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\TortoiseSVN\\bin;D:\\xampp\\php;D:\\Users\\toanhv9\\AppData\\Local\\ComposerSetup\\bin;D:\\Users\\toanhv9.VIETTELGROUP\\AppData\\Local\\ComposerSetup\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPRC' => 'D:\\xampp\\php'
+    'PHP_PEAR_BIN_DIR' => 'D:\\xampp\\php'
+    'PHP_PEAR_CFG_DIR' => 'D:\\xampp\\php\\cfg'
+    'PHP_PEAR_DATA_DIR' => 'D:\\xampp\\php\\data'
+    'PHP_PEAR_DOC_DIR' => 'D:\\xampp\\php\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'D:\\xampp\\php\\pear'
+    'PHP_PEAR_PHP_BIN' => 'D:\\xampp\\php\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'D:\\xampp\\php'
+    'PHP_PEAR_TEST_DIR' => 'D:\\xampp\\php\\tests'
+    'PHP_PEAR_WWW_DIR' => 'D:\\xampp\\php\\www'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 63 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3f02'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => 'TOANHV9@VTT-TOANHV9-V$S$P$_#$S'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PT6HOME' => 'C:\\Program Files (x86)\\Cisco Packet Tracer 6.2sv'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SVAgent' => 'C:\\Program Files (x86)\\CloudVolumes\\Agent\\'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'D:\\Users\\TOANHV~2.VIE\\AppData\\Local\\Temp'
+    'TMP' => 'D:\\xampp\\tmp'
+    'TNSNAME' => 'C:\\ORACLE\\product\\11.2.0\\client_1\\Network\\Admin\\'
+    'TNS_ADMIN' => 'C:\\ORACLE\\product\\11.2.0\\client_1\\Network\\Admin\\'
+    'USERDNSDOMAIN' => 'VIETTELGROUP.VIETTELAD.COM'
+    'USERDOMAIN' => 'VIETTELGROUP'
+    'USERNAME' => 'TOANHV9'
+    'USERPROFILE' => 'D:\\Users\\toanhv9.VIETTELGROUP'
+    'ViewClient_Broker_DNS_Name' => 'CLOUDPC-RP.CLOUDPC.LOCAL'
+    'ViewClient_Broker_DomainName' => 'VIETTELGROUP'
+    'ViewClient_Broker_Remote_IP_Address' => '192.168.146.90'
+    'ViewClient_Broker_Tunneled' => 'true'
+    'ViewClient_Broker_Tunnel_URL' => 'https://cloudpc2.viettelidc.com.vn:443'
+    'ViewClient_Broker_URL' => 'https://cloudpc.viettelidc.com.vn:443'
+    'ViewClient_Broker_UserName' => 'toanhv9'
+    'ViewClient_Client_ID' => 'AgAAAExgri385GYI2Bk4ZmaNwWY='
+    'ViewClient_Displays_Number' => '1'
+    'ViewClient_Displays_Topology' => '{1366,768,0,0,32,1}'
+    'ViewClient_IP_Address' => '192.168.146.90'
+    'ViewClient_Keyboard_KeyDelayToRepeat' => '1'
+    'ViewClient_Keyboard_KeyRepeatRate' => '31'
+    'ViewClient_Keyboard_Language' => '1033'
+    'ViewClient_Keyboard_Layout' => '00000409'
+    'ViewClient_Keyboard_NumFuncKeys' => '12'
+    'ViewClient_Keyboard_NumIndicators' => '3'
+    'ViewClient_Keyboard_NumKeys' => '101'
+    'ViewClient_Keyboard_ScanCodeMode' => '1'
+    'ViewClient_Keyboard_SubType' => '0'
+    'ViewClient_Keyboard_Type' => '4'
+    'ViewClient_Language' => 'en-US'
+    'ViewClient_Launch_ID' => 'VTT-CNTT'
+    'ViewClient_Launch_SessionType' => 'DESKTOP'
+    'ViewClient_LoggedOn_Domainname' => 'VIETTELGROUP'
+    'ViewClient_LoggedOn_Username' => 'TOANHV9'
+    'ViewClient_Machine_Domain' => 'VIETTELGROUP'
+    'ViewClient_Machine_Name' => 'VTT-TOANHV9'
+    'ViewClient_MAC_Address' => 'C8-CB-B8-14-48-51'
+    'ViewClient_Mouse_Identifier' => '2'
+    'ViewClient_Mouse_NumButtons' => '2'
+    'ViewClient_Mouse_SampleRate' => '60'
+    'ViewClient_Protocol' => 'PCOIP'
+    'ViewClient_Type' => 'Windows'
+    'ViewClient_TZID' => 'Asia/Pontianak'
+    'ViewClient_Windows_Timezone' => 'SE Asia Standard Time'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1459303592.447
+    'REQUEST_TIME' => 1459303592
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
